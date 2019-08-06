@@ -1,0 +1,25 @@
+.stones-list { display: flex; flex-direction: row; flex-wrap: wrap; font-size: 16px; justify-content: flex-start; margin: 0; padding: 0; width: 100%; }
+.stones-list .stones-list__item { flex: 0 0 calc( 25% - 2rem ); margin: 1rem; background-color: #f6f6f6; }
+.stones-list .stones-list__item > a { text-decoration: none; }
+.stones-list .stones-list__item__image { background-repeat: no-repeat; background-position: center; background-size: cover; padding-bottom: 100%; position: relative; width: 100%; }
+.stones-list .stones-list__item__text { color: #14679d; font-size: 1.2rem; margin: 0; padding: 1rem; }
+.stones-list .stones-list__item__text p { margin: 0; padding: 0; }
+
+@media screen and (max-width: 600px) { .stones-list .stones-list__item { flex: 0 0 calc( 33% - 2rem ); } }
+@media screen and (max-width: 460px) { .stones-list .stones-list__item { flex: 1 0 calc( 50% - 4rem ); } }
+.stones-type .stones-type__main > div { border: 1px solid #f6f6f6; }
+.stones-type .stones-type__main__content { padding: 2rem; }
+.stones-type .stones-type__main__content > h1 { margin: 0; }
+.stones-type .stones-type__main__image { background-position: center; background-repeat: no-repeat; background-size: cover; display: block; position: relative; padding-bottom: 40%; width: 100%; }
+.stones-type .stones-type__sidebar__title { background-color: #f6f6f6; padding: 1rem 0.8rem; position: relative; cursor: pointer; }
+.stones-type .stones-type__sidebar__title p { color: #14679d; font-size: 1.3rem; margin: 0; padding: 0; }
+.stones-type .stones-type__sidebar__title span { font-size: 2rem; font-weight: bolder; position: absolute; right: 1rem; top: 10px; bottom: 10px; }
+.stones-type .stones-type__sidebar__posts { display: flex; flex-direction: row; flex-wrap: wrap; transition: ease-in-out 0.7s; max-height: 2000px; }
+.stones-type .stones-type__sidebar__posts > div { flex: 0 0 calc( 50% - 1.4rem ); background: none; margin: 0.7rem; transition: ease-in-out 1s; }
+.stones-type .stones-type__sidebar__posts > div div { background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; display: block; padding-bottom: 100%; }
+.stones-type .stones-type__sidebar__posts.hide-posts { max-height: 0; overflow: hidden; }
+
+@media screen and (max-width: 992px) { .stones-type .stones-type__sidebar__posts > div { flex-basis: calc( 15% - 1.4rem ); } }
+@media screen and (max-width: 600px) { .stones-type .stones-type__sidebar__posts > div { flex-basis: calc( 20% - 1.4rem ); } }
+
+/*# sourceMappingURL=main.css.map */

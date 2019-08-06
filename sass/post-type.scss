@@ -1,0 +1,91 @@
+.stones-type {
+  & &__main {
+    > div {
+      border: 1px solid $gray;
+    }
+    &__content {
+      padding: 2rem;
+      > h1 {
+        margin: 0;
+      }
+    }
+    &__image {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      position: relative;
+      padding-bottom: 40%;
+      width: 100%;
+    }
+  }
+  & &__sidebar {
+    &__title {
+      background-color: $gray;
+      padding: 1rem 0.8rem;
+      position: relative;
+      cursor: pointer;
+      p {
+        color: $blue;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0;
+      }
+      span {
+        font-size: 2rem;
+        font-weight: bolder;
+        position: absolute;
+        right: 1rem;
+        top: 10px; bottom: 10px;
+      }
+    }
+    &__posts {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      transition: ease-in-out 0.7s;
+      max-height: 2000px;
+      > div {
+        flex: 0 0 calc( 50% - 1.4rem );
+        background: none;
+        margin: 0.7rem;
+        transition: ease-in-out 1s;
+        div {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          display: block;
+          padding-bottom: 100%;
+        }
+      }
+      &.hide-posts {
+        max-height: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .stones-type {
+    & &__sidebar {
+      &__posts {
+        > div {
+          flex-basis: calc( 15% - 1.4rem );
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .stones-type {
+    & &__sidebar {
+      &__posts {
+        > div {
+          flex-basis: calc( 20% - 1.4rem );
+        }
+      }
+    }
+  }
+}

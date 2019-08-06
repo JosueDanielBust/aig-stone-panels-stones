@@ -1,0 +1,51 @@
+.stones-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: $font-size;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  & &__item {
+    flex: 0 0 calc( 25% - 2rem );
+    margin: 1rem;
+    background-color: $gray;
+    > a {
+      text-decoration: none;
+    }
+    &__image {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 100%;
+      position: relative;
+      width: 100%;
+    }
+    &__text {
+      color: $blue;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 1rem;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stones-list {
+    & &__item {
+      flex: 0 0 calc( 33% - 2rem );
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .stones-list {
+    & &__item {
+      flex: 1 0 calc( 50% - 4rem );
+    }
+  }
+}

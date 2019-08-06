@@ -1,0 +1,10 @@
+- Plugin Name:  AIG - Stones
+- Plugin URI:   https://advicelocal.com/
+- Description:  StonePanels - Stone Post Type
+- Version:      1.0
+- Author:       Josue Daniel Bustamante
+- Author URI:   https://advicelocal.com/
+- License:      MIT
+- License URI:  https://advicelocal.com/
+- Text Domain:  aig-stone-panels-stones
+- Domain Path:  /languages
